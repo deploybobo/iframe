@@ -4,79 +4,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link async="" rel="icon" href="https://assets.trafficpointltd.com/app/uploads/sites/136/2019/05/03133736/cropped-lendstart_favicon1-32x32.png" sizes="32x32">
-    <title>Lendstart Tools</title>
+    <title>ticker</title>
     <link rel="stylesheet" href="/css/style.css">
     <meta name="robots" content="noindex">
 
 
 </head>
 <body>
-    <%- include('./partials/header'); %>
 
-    <h4> Thefinancials Old Ticker </h4>
+    <h1> Thefinancials Old Ticker </h1>
 
     <iframe loading="lazy" style="display: block; overflow: hidden; height: 48px; width: 100%; margin: auto;" src="https://www.thefinancials.com/ShowPanel.aspx?pid=TRAFFICP&amp;id=3698&amp;tilewidth=&amp;bgcolor=&amp;fontcolor=&amp;bordercolor=&amp;showvalueonrow2=false&amp;scrollSpeedFromZeroToTen=5&amp;showchange=true&amp;upchangecolor=00994F&amp;downchangecolor=990000&amp;nochangecolor=666666&amp;excludearrows=true&amp;adddividers=false&amp;bordercolor=&amp;showgraphsinnewwindow=false&amp;&amp;nographs=false&amp;nopreview=true&amp;displayononeline=true&amp;mode=iframe"></iframe>
 
-    <h4> New Ticker </h4>
-
-    <div class="ticker_continer">
-        <div class="new_ticker">
-
-        </div>
-    </div>
-
-    <!-- the style for the new ticker  -->
-    <style>
-
-        .ticker_continer{
-            height: 40px;
-            margin: auto;
-            width: 100%;
-            display: grid;
-            place-items: center;
-            overflow: hidden;
-        }
-
-        .new_ticker{
-            display: flex;
-            width: calc(200px * 20);
-            animation: scroll 35s linear infinite;
-        }
-
-        .new_ticker > div{
-            font-size: 14px;
-            width:  200px;
-            text-align: center;
-            padding: 5px;
-            background-color: #f1f1f1;
-            border-right: #c0c0c0 1px solid !important;
-            
-        }
-
-        .rate_value{
-            font-weight: 700;
-        }
-
-        .rate_type{
-            color:#666666;
-        }
-
-        @keyframes scroll {
-            0%{
-                transform: translateX(0);
-            }
-
-            100%{
-                transform: translateX(calc(-200px * 10));
-            }
-            
-        }
-
-    </style>
-
-        
-
-    </script>
 
 </body>
 </html>
